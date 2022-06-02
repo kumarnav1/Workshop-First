@@ -31,6 +31,4 @@ public class BirdRepository {
             System.out.println(bird.toString() + " \n");
         }
     }
-
 }
-

@@ -13,12 +13,6 @@ public class Main {
         while (true) {
 
             int choice = userInterface.showMainMenu();
-
-            if (choice >= 5 || choice <= 0) {
-
-                System.out.println("Program is terminated");
-                return;
-            }
             main.handleUserChoice(choice);
         }
     }
@@ -39,6 +33,12 @@ public class Main {
                 break;
             case 4:
                 System.out.println("You have chosen to remove bird ");
+                break;
+            case 5:
+                System.out.println("Your program is terminated");
+                System.exit(1);
+            default:
+                System.out.println("\n \t Please enter the correct input");
         }
     }
 
