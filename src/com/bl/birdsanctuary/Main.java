@@ -2,47 +2,46 @@ package com.bl.birdsanctuary;
 
 public class Main {
 
-    public static int choice = 0;
     BirdRepository birdRepository = new BirdRepository();
 
     public static void main(String[] args) {
 
         System.out.println("Welcome to Bird Sanctuary Project");
         Main main = new Main();
-        main.handleUserChoice();
-
-    }
-
-
-    private void handleUserChoice(){
-
         UserInterface userInterface = new UserInterface();
 
-        while(true){
+        while (true) {
 
-            Main main = new Main();
-            Main.choice = userInterface.showMainMenu();
-            switch (Main.choice) {
-                case 1:
-                    System.out.println("You have chosen to Add bird");
-                    addBird();
-                    handleUserChoice();
-                    break;
-                case 2:
-                    System.out.println("You have chosen to display bird");
-                    printBird();
-                    handleUserChoice();
-                    break;
-                case 3:
-                    System.out.println("You have chosen to Update bird ");
-                    break;
-                case 4:
-                    System.out.println("You have chosen to remove bird ");
-                case 5 :
-                    return;
+            int choice = userInterface.showMainMenu();
+
+            if (choice >= 5 || choice <= 0) {
+
+                System.out.println("Program is terminated");
+                return;
             }
+            main.handleUserChoice(choice);
         }
     }
+
+    private void handleUserChoice(int choice) {
+
+        switch (choice) {
+            case 1:
+                System.out.println("You have chosen to Add bird details");
+                addBird();
+                break;
+            case 2:
+                System.out.println("You have chosen to display bird details");
+                printBird();
+                break;
+            case 3:
+                System.out.println("You have chosen to Update bird details");
+                break;
+            case 4:
+                System.out.println("You have chosen to remove bird ");
+        }
+    }
+
 
     private void printBird() {
 
@@ -91,6 +90,5 @@ public class Main {
         birdRepository.add(penguin);
         birdRepository.add(peacock);
         birdRepository.add(ostrich);
-        return;
     }
 }

@@ -8,7 +8,7 @@ public class UserInterface {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter: \n 1. Add Bird. \n 2. Remove Bird. \n 3. Update Bird. \n 4. Display Bird : ");
+        System.out.print("\nEnter: \n 1. Add Bird. \n 2. Remove Bird. \n 3. Update Bird. \n 4. Display Bird : ");
         return scanner.nextInt();
     }
 

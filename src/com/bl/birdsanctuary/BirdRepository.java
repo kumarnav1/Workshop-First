@@ -28,7 +28,7 @@ public class BirdRepository {
 
     void print() {
         for (Bird bird : birds) {
-            System.out.println(bird.toString());
+            System.out.println(bird.toString() + " \n");
         }
     }
 
