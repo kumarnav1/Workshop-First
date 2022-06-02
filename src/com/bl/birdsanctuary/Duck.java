@@ -17,4 +17,14 @@ public class Duck extends Bird {
     void swim() {
         System.out.println("Duck cannot swim.");
     }
+
+    @Override
+    public String toString() {
+        return "Duck{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

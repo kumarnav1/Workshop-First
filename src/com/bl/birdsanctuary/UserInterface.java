@@ -12,7 +12,7 @@ public class UserInterface {
         return scanner.nextInt();
     }
 
-    int showToAddBird(){
+    int showToAddBird() {
 
         Scanner scanner = new Scanner(System.in);
 

@@ -2,14 +2,6 @@ package com.bl.birdsanctuary;
 
 public class Ostrich extends Bird {
 
-    public Ostrich(String id, String name, String color, int age) {
-
-        this.id = id;
-        this.age = age;
-        this.color = color;
-        this.name = name;
-    }
-
     @Override
     void eat() {
         System.out.println("Parrot can eat.");
@@ -23,5 +15,15 @@ public class Ostrich extends Bird {
     @Override
     void swim() {
         System.out.println("Parrot cannot swim.");
+    }
+
+    @Override
+    public String toString() {
+        return "Ostrich{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", age=" + age +
+                '}';
     }
 }

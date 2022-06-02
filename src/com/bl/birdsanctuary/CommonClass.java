@@ -1,3 +1,4 @@
+/*
 package com.bl.birdsanctuary;
 
 import java.util.ArrayList;
@@ -90,3 +91,4 @@ public class CommonClass {
         parrotList.add(parrot);
     }
 }
+*/

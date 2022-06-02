@@ -16,4 +16,14 @@ public class Penguin extends Bird {
     void swim() {
         System.out.println("Penguin can swim.");
     }
+
+    @Override
+    public String toString() {
+        return "Penguin{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

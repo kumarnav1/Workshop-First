@@ -15,4 +15,14 @@ public class Peacock extends Bird {
     void swim() {
         System.out.println("Peacock can fly.");
     }
+
+    @Override
+    public String toString() {
+        return "Peacock{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
